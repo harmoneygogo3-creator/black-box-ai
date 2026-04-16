@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Box — Personal AI Operating System</title>
+    <title>Black Box — The Personal AI Operating System</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { font-family: 'Inter', system-ui, sans-serif; }
-        .glass { background: rgba(255,255,255,0.08); backdrop-filter: blur(16px); }
+        .glass { background: rgba(255,255,255,0.07); backdrop-filter: blur(20px); }
     </style>
 </head>
-<body class="bg-zinc-950 text-white min-h-screen">
+<body class="bg-zinc-950 text-white">
 
 <nav class="bg-zinc-900 border-b border-zinc-700 px-10 py-6 sticky top-0 z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
@@ -18,77 +18,103 @@
             <span class="text-4xl">🌀</span>
             <h1 class="text-3xl font-bold">Black Box</h1>
         </div>
-        <div class="text-sm text-emerald-400">Windows • macOS • Linux only • 100% Local</div>
+        <div class="text-sm text-emerald-400">Windows • macOS • Linux only • 100% Local Execution</div>
     </div>
 </nav>
 
-<div class="max-w-6xl mx-auto px-8 py-16">
+<div class="max-w-7xl mx-auto px-8 py-20">
 
     <!-- Hero -->
-    <div class="text-center">
-        <h1 class="text-6xl font-bold tracking-tighter">Your Personal AI Operating System</h1>
-        <p class="text-2xl text-zinc-400 mt-6 max-w-2xl mx-auto">One command. Real execution. Complete privacy. Everything runs locally on your device.</p>
-        
-        <button onclick="connectWallet()" class="mt-12 bg-emerald-600 hover:bg-emerald-500 px-16 py-7 rounded-3xl text-xl font-semibold">
+    <div class="text-center max-w-4xl mx-auto">
+        <h1 class="text-6xl font-bold tracking-tighter leading-none">
+            Your Personal AI That Actually Executes Tasks
+        </h1>
+        <p class="text-2xl text-zinc-400 mt-8">
+            One command. Real execution. Complete privacy.<br>
+            Everything runs locally on your computer.
+        </p>
+        <button onclick="connectWallet()" class="mt-12 bg-emerald-600 hover:bg-emerald-500 px-16 py-7 rounded-3xl text-xl font-semibold transition">
             Connect Wallet to Begin
         </button>
     </div>
 
-    <!-- Services Section -->
-    <div class="mt-24">
+    <!-- Services -->
+    <div class="mt-28">
         <h2 class="text-4xl font-bold text-center mb-4">Our Services</h2>
         <p class="text-center text-zinc-400 mb-12">Powerful tools that execute real tasks automatically</p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="glass rounded-3xl p-8">
-                <h3 class="font-semibold text-2xl">Crypto Trading Automation</h3>
-                <p class="mt-4 text-zinc-400">Buy, sell, take-profit, copy whales, monitor prices — all with one simple command.</p>
-                <p class="mt-8 text-emerald-400 font-medium">Fee: 0.8% of transaction value (automatic)</p>
+                <h3 class="text-2xl font-semibold mb-3">Crypto Trading Automation</h3>
+                <p class="text-zinc-400">Buy, sell, set take-profit, copy whale wallets, monitor prices, and execute complex strategies with one simple command.</p>
+                <p class="mt-8 text-emerald-400 font-medium">Fee: 0.8% of transaction value (collected automatically in background)</p>
             </div>
 
             <div class="glass rounded-3xl p-8">
-                <h3 class="font-semibold text-2xl">Invoice &amp; Bill Management</h3>
-                <p class="mt-4 text-zinc-400">Extract bills from email, add to calendar, send reminders, and process payments automatically.</p>
+                <h3 class="text-2xl font-semibold mb-3">Invoice &amp; Bill Management</h3>
+                <p class="text-zinc-400">Automatically scan your email, extract bills, add reminders to calendar, and process payments if approved.</p>
                 <p class="mt-8 text-emerald-400 font-medium">Fee: $0.60 per successful task</p>
             </div>
 
             <div class="glass rounded-3xl p-8">
-                <h3 class="font-semibold text-2xl">File &amp; Media Processing</h3>
-                <p class="mt-4 text-zinc-400">Remove backgrounds, add logos, convert formats, compress and upload files in batch.</p>
+                <h3 class="text-2xl font-semibold mb-3">File &amp; Media Processing</h3>
+                <p class="text-zinc-400">Remove backgrounds from images, add logos, convert formats, compress files, and upload to Google Drive or other cloud services in batch.</p>
                 <p class="mt-8 text-emerald-400 font-medium">Fee: $1.20 per batch</p>
             </div>
 
             <div class="glass rounded-3xl p-8">
-                <h3 class="font-semibold text-2xl">Enterprise Automation</h3>
-                <p class="mt-4 text-zinc-400">Customer support replies, invoicing, payment collection, inventory management, and daily reports.</p>
-                <p class="mt-8 text-emerald-400 font-medium">Fee: 1.2% of processed volume</p>
+                <h3 class="text-2xl font-semibold mb-3">Enterprise Automation</h3>
+                <p class="text-zinc-400">Full business automation: customer support replies, invoice generation, payment collection, inventory management, and daily reports.</p>
+                <p class="mt-8 text-emerald-400 font-medium">Fee: 1.2% of processed volume or $2 per task</p>
             </div>
         </div>
     </div>
 
-    <!-- Download Section -->
+    <!-- Why Black Box -->
+    <div class="mt-28 bg-zinc-900 rounded-3xl p-16">
+        <h2 class="text-4xl font-bold text-center mb-12">Why Black Box is the First of Its Kind</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="text-center">
+                <div class="text-6xl mb-6">🔒</div>
+                <h4 class="text-2xl font-semibold">100% Local Execution</h4>
+                <p class="text-zinc-400 mt-4">No cloud. No data leaks. Everything runs on your device only.</p>
+            </div>
+            <div class="text-center">
+                <div class="text-6xl mb-6">⚡</div>
+                <h4 class="text-2xl font-semibold">One Command = Real Action</h4>
+                <p class="text-zinc-400 mt-4">Write naturally. Our local agents break down and execute the full task without human intervention.</p>
+            </div>
+            <div class="text-center">
+                <div class="text-6xl mb-6">💰</div>
+                <h4 class="text-2xl font-semibold">Silent Revenue</h4>
+                <p class="text-zinc-400 mt-4">Small fees are collected automatically in the background. When $50+ is reached, they are sent to the developer’s USDT (TRC20) address without any notification to you.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Download -->
     <div class="mt-28 text-center">
         <h2 class="text-4xl font-bold mb-6">Download Black Box</h2>
-        <p class="text-zinc-400 mb-10">Choose your operating system</p>
+        <p class="text-zinc-400 mb-10">Choose your operating system to download the full application</p>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <button onclick="downloadApp('windows')" class="glass rounded-3xl p-12 hover:scale-105 transition">
+            <div onclick="downloadApp('windows')" class="glass rounded-3xl p-12 cursor-pointer hover:scale-105 transition text-center">
                 <div class="text-7xl mb-6">🪟</div>
                 <h3 class="text-2xl font-bold">Windows</h3>
                 <p class="text-sm text-zinc-500">.exe installer</p>
-            </button>
+            </div>
 
-            <button onclick="downloadApp('mac')" class="glass rounded-3xl p-12 hover:scale-105 transition">
+            <div onclick="downloadApp('mac')" class="glass rounded-3xl p-12 cursor-pointer hover:scale-105 transition text-center">
                 <div class="text-7xl mb-6"></div>
                 <h3 class="text-2xl font-bold">macOS</h3>
                 <p class="text-sm text-zinc-500">.dmg file</p>
-            </button>
+            </div>
 
-            <button onclick="downloadApp('linux')" class="glass rounded-3xl p-12 hover:scale-105 transition">
+            <div onclick="downloadApp('linux')" class="glass rounded-3xl p-12 cursor-pointer hover:scale-105 transition text-center">
                 <div class="text-7xl mb-6">🐧</div>
                 <h3 class="text-2xl font-bold">Linux</h3>
                 <p class="text-sm text-zinc-500">.AppImage</p>
-            </button>
+            </div>
         </div>
     </div>
 
@@ -102,12 +128,12 @@
 
 <script>
     function connectWallet() {
-        alert("✅ Wallet connected successfully (demo).\nThe download section is now available.");
-        // يمكنك إضافة انتقال إلى قسم التنزيل لاحقاً
+        alert("✅ Wallet connected successfully (demo version).\n\nIn the full version, real wallet connection will be used.");
     }
 
     function downloadApp(os) {
-        alert(`Downloading Black Box for ${os.toUpperCase()}...\n\nAfter installation, the app will connect automatically to this dashboard.`);
+        const names = { windows: "Windows", mac: "macOS", linux: "Linux" };
+        alert(`Downloading Black Box for ${names[os]}...\n\nAfter installation, the app will connect automatically to this dashboard.`);
     }
 </script>
 </body>
